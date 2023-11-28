@@ -163,7 +163,7 @@ def get_power_method_solutions(A: list, size: int):
         dif = find_vector_norm(get_difference_of_vectors(multiply_matrix_to_vector(A, y_t), multiply_vector_to_number(y_t, l)))
         if dif < eps:
             #Возвращаем собственное(макс. по модулю) значение и его собственный вектор
-            return l, y_t
+            return l, y_1
         #ззапоминаем y_t
         y_0 = y_t
 
